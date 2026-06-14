@@ -190,13 +190,7 @@ public static int cuadrado(int numero){
 }
 ```
 
-### Preguntas de repaso
 
-1. ¿Qué es un método?
-2. ¿Qué son los parámetros?
-3. ¿Qué es un valor de retorno?
-4. ¿Por qué es útil reutilizar código?
-5. ¿Cuál es la diferencia entre un método con retorno y uno sin retorno?
 
 ---
 
