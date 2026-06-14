@@ -118,14 +118,6 @@ for(int i = 1; i <= 10; i++){
 }
 ```
 
-### Preguntas de repaso
-
-1. ¿Qué es un ciclo?
-2. ¿Para qué sirve un ciclo for?
-3. ¿Cuál es la diferencia entre while y do while?
-4. ¿Qué es una condición?
-5. ¿Qué ocurre si una condición nunca se vuelve falsa?
-
 ---
 
 # Métodos (Funciones)
@@ -276,13 +268,7 @@ int[][] matriz = {
 };
 ```
 
-### Preguntas de repaso
 
-1. ¿Qué es un vector?
-2. ¿Qué es una matriz?
-3. ¿Qué significa un índice?
-4. ¿Cómo se recorre un vector?
-5. ¿Qué diferencia existe entre un vector y una matriz?
 
 ---
 
@@ -348,13 +334,7 @@ for(String nombre : nombres){
 }
 ```
 
-### Preguntas de repaso
 
-1. ¿Qué es un ArrayList?
-2. ¿Cuál es su ventaja principal?
-3. ¿Cómo se agregan elementos?
-4. ¿Cómo se recorren los elementos?
-5. ¿Qué tipos de datos puede almacenar?
 
 ---
 
@@ -422,13 +402,7 @@ while(lector.readLine() != null){
 }
 ```
 
-### Preguntas de repaso
 
-1. ¿Para qué sirve FileWriter?
-2. ¿Para qué sirve FileReader?
-3. ¿Qué es BufferedReader?
-4. ¿Por qué se utilizan excepciones?
-5. ¿Por qué es importante cerrar un archivo?
 
 ---
 
