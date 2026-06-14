@@ -8,11 +8,11 @@ El objetivo es explicar de forma sencilla algunos conceptos fundamentales que se
 
 Los temas incluidos son:
 
-- Ciclos (Bucles)
-- Métodos (Funciones)
-- Vectores y Matrices
-- Listas (ArrayList)
-- Manejo de Archivos
+* Ciclos (Bucles)
+* Métodos (Funciones)
+* Vectores y Matrices
+* Listas (ArrayList)
+* Manejo de Archivos
 
 ---
 
@@ -20,11 +20,9 @@ Los temas incluidos son:
 
 ## ¿Qué es un ciclo?
 
-Un ciclo es una estructura que permite repetir un bloque de instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
+Un ciclo es una estructura que permite repetir instrucciones varias veces sin escribir el mismo código repetidamente.
 
-Los ciclos son muy útiles cuando se necesita procesar grandes cantidades de datos o realizar tareas repetitivas.
-
----
+Los ciclos ayudan a automatizar tareas y reducir la cantidad de código.
 
 ## Ciclo For
 
@@ -50,11 +48,9 @@ Código completo:
 
 [EjemploFor.java](./codigo/ciclos/EjemploFor.java)
 
----
-
 ## Ciclo While
 
-Se utiliza cuando no conocemos exactamente cuántas veces se repetirá el ciclo.
+Se utiliza cuando no conocemos la cantidad exacta de repeticiones.
 
 ### Sintaxis
 
@@ -68,11 +64,9 @@ Código completo:
 
 [EjemploWhile.java](./codigo/ciclos/EjemploWhile.java)
 
----
-
 ## Ciclo Do While
 
-La diferencia principal es que siempre ejecuta el bloque al menos una vez.
+Siempre ejecuta el bloque de instrucciones al menos una vez.
 
 ### Sintaxis
 
@@ -86,33 +80,51 @@ Código completo:
 
 [EjemploDoWhile.java](./codigo/ciclos/EjemploDoWhile.java)
 
----
-
 ## Ejercicios
 
 ### Ejercicio 1
 
-Mostrar los números del 1 al 20.
+Mostrar los números del 1 al 20 utilizando un ciclo for.
 
-### Solución
+#### Solución
 
-Utilizar un ciclo for.
+```java
+for(int i = 1; i <= 20; i++){
+    System.out.println(i);
+}
+```
 
 ### Ejercicio 2
 
 Mostrar los números pares del 1 al 100.
 
-### Solución
+#### Solución
 
-Utilizar un ciclo for aumentando de 2 en 2.
+```java
+for(int i = 2; i <= 100; i += 2){
+    System.out.println(i);
+}
+```
 
 ### Ejercicio 3
 
-Mostrar una tabla de multiplicar del 5.
+Mostrar la tabla de multiplicar del 5.
 
-### Solución
+#### Solución
 
-Utilizar un ciclo for desde 1 hasta 10.
+```java
+for(int i = 1; i <= 10; i++){
+    System.out.println("5 x " + i + " = " + (5 * i));
+}
+```
+
+### Preguntas de repaso
+
+1. ¿Qué es un ciclo?
+2. ¿Para qué sirve un ciclo for?
+3. ¿Cuál es la diferencia entre while y do while?
+4. ¿Qué es una condición?
+5. ¿Qué ocurre si una condición nunca se vuelve falsa?
 
 ---
 
@@ -124,15 +136,11 @@ Un método es un bloque de código que realiza una tarea específica.
 
 Permite reutilizar código y organizar mejor los programas.
 
----
-
 ## Ventajas
 
-- Reutilización de código.
-- Mejor organización.
-- Facilita el mantenimiento.
-
----
+* Reutilización de código.
+* Mejor organización.
+* Facilita el mantenimiento.
 
 ## Método sin parámetros
 
@@ -140,15 +148,11 @@ Código completo:
 
 [MetodoSaludar.java](./codigo/metodos/MetodoSaludar.java)
 
----
-
 ## Método con parámetros
 
 Código completo:
 
 [MetodoSuma.java](./codigo/metodos/MetodoSuma.java)
-
----
 
 ## Método con retorno
 
@@ -156,21 +160,51 @@ Código completo:
 
 [MetodoRetorno.java](./codigo/metodos/MetodoRetorno.java)
 
----
-
 ## Ejercicios
 
 ### Ejercicio 1
 
 Crear un método que muestre un mensaje de bienvenida.
 
+#### Solución
+
+```java
+public static void bienvenida(){
+    System.out.println("Bienvenido");
+}
+```
+
 ### Ejercicio 2
 
 Crear un método que reciba dos números y los multiplique.
 
+#### Solución
+
+```java
+public static void multiplicar(int a, int b){
+    System.out.println(a * b);
+}
+```
+
 ### Ejercicio 3
 
 Crear un método que retorne el cuadrado de un número.
+
+#### Solución
+
+```java
+public static int cuadrado(int numero){
+    return numero * numero;
+}
+```
+
+### Preguntas de repaso
+
+1. ¿Qué es un método?
+2. ¿Qué son los parámetros?
+3. ¿Qué es un valor de retorno?
+4. ¿Por qué es útil reutilizar código?
+5. ¿Cuál es la diferencia entre un método con retorno y uno sin retorno?
 
 ---
 
@@ -190,15 +224,11 @@ Código completo:
 
 [VectorBasico.java](./codigo/vectores_matrices/VectorBasico.java)
 
----
-
 ## Recorrer un vector
 
 Código completo:
 
 [RecorrerVector.java](./codigo/vectores_matrices/RecorrerVector.java)
-
----
 
 ## Matrices
 
@@ -208,21 +238,51 @@ Código completo:
 
 [MatrizBasica.java](./codigo/vectores_matrices/MatrizBasica.java)
 
----
-
 ## Ejercicios
 
 ### Ejercicio 1
 
-Crear un vector con 5 números.
+Crear un vector con cinco números.
+
+#### Solución
+
+```java
+int[] numeros = {1,2,3,4,5};
+```
 
 ### Ejercicio 2
 
 Mostrar todos los elementos de un vector.
 
+#### Solución
+
+```java
+for(int i = 0; i < numeros.length; i++){
+    System.out.println(numeros[i]);
+}
+```
+
 ### Ejercicio 3
 
-Crear una matriz de 3 filas por 3 columnas.
+Crear una matriz de tres filas y tres columnas.
+
+#### Solución
+
+```java
+int[][] matriz = {
+    {1,2,3},
+    {4,5,6},
+    {7,8,9}
+};
+```
+
+### Preguntas de repaso
+
+1. ¿Qué es un vector?
+2. ¿Qué es una matriz?
+3. ¿Qué significa un índice?
+4. ¿Cómo se recorre un vector?
+5. ¿Qué diferencia existe entre un vector y una matriz?
 
 ---
 
@@ -232,9 +292,7 @@ Crear una matriz de 3 filas por 3 columnas.
 
 ArrayList es una colección dinámica que permite almacenar elementos.
 
-A diferencia de los arreglos, puede aumentar o disminuir su tamaño.
-
----
+A diferencia de los arreglos, puede cambiar de tamaño durante la ejecución.
 
 ## Crear una lista
 
@@ -242,15 +300,11 @@ Código completo:
 
 [ListaBasica.java](./codigo/listas/ListaBasica.java)
 
----
-
 ## Agregar elementos
 
 Código completo:
 
 [AgregarElementos.java](./codigo/listas/AgregarElementos.java)
-
----
 
 ## Recorrer una lista
 
@@ -258,21 +312,49 @@ Código completo:
 
 [RecorrerLista.java](./codigo/listas/RecorrerLista.java)
 
----
-
 ## Ejercicios
 
 ### Ejercicio 1
 
 Crear una lista de nombres.
 
+#### Solución
+
+```java
+ArrayList<String> nombres = new ArrayList<>();
+```
+
 ### Ejercicio 2
 
-Agregar cinco elementos a una lista.
+Agregar elementos a una lista.
+
+#### Solución
+
+```java
+nombres.add("Ana");
+nombres.add("Luis");
+nombres.add("Carlos");
+```
 
 ### Ejercicio 3
 
-Mostrar todos los elementos utilizando un ciclo.
+Mostrar todos los elementos de la lista.
+
+#### Solución
+
+```java
+for(String nombre : nombres){
+    System.out.println(nombre);
+}
+```
+
+### Preguntas de repaso
+
+1. ¿Qué es un ArrayList?
+2. ¿Cuál es su ventaja principal?
+3. ¿Cómo se agregan elementos?
+4. ¿Cómo se recorren los elementos?
+5. ¿Qué tipos de datos puede almacenar?
 
 ---
 
@@ -282,15 +364,11 @@ Mostrar todos los elementos utilizando un ciclo.
 
 Permite almacenar información de forma permanente en archivos de texto.
 
----
-
 ## Leer un archivo
 
 Código completo:
 
 [LeerArchivo.java](./codigo/archivos/LeerArchivo.java)
-
----
 
 ## Escribir un archivo
 
@@ -298,15 +376,11 @@ Código completo:
 
 [EscribirArchivo.java](./codigo/archivos/EscribirArchivo.java)
 
----
-
 ## Procesar un archivo
 
 Código completo:
 
 [ProcesarArchivo.java](./codigo/archivos/ProcesarArchivo.java)
-
----
 
 ## Ejercicios
 
@@ -314,18 +388,52 @@ Código completo:
 
 Crear un archivo de texto y escribir información.
 
+#### Solución
+
+```java
+FileWriter escritor = new FileWriter("datos.txt");
+escritor.write("Hola Mundo");
+escritor.close();
+```
+
 ### Ejercicio 2
 
 Leer el contenido de un archivo.
+
+#### Solución
+
+```java
+BufferedReader lector = new BufferedReader(
+    new FileReader("datos.txt")
+);
+```
 
 ### Ejercicio 3
 
 Contar cuántas líneas tiene un archivo.
 
+#### Solución
+
+```java
+int contador = 0;
+
+while(lector.readLine() != null){
+    contador++;
+}
+```
+
+### Preguntas de repaso
+
+1. ¿Para qué sirve FileWriter?
+2. ¿Para qué sirve FileReader?
+3. ¿Qué es BufferedReader?
+4. ¿Por qué se utilizan excepciones?
+5. ¿Por qué es importante cerrar un archivo?
+
 ---
 
 # Conclusiones
 
-Los ciclos, métodos, vectores, listas y manejo de archivos son conceptos fundamentales en Java.
+Los ciclos, métodos, vectores, matrices, listas y manejo de archivos forman parte de los fundamentos de programación en Java.
 
-Comprender estos temas permite desarrollar programas más organizados y resolver problemas de forma eficiente.
+Comprender estos conceptos permite desarrollar programas más organizados, reutilizar código y resolver problemas de manera eficiente.
