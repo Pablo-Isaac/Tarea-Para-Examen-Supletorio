@@ -189,7 +189,6 @@ public static int cuadrado(int numero){
     return numero * numero;
 }
 ```
-
 ---
 
 # Vectores y Matrices
