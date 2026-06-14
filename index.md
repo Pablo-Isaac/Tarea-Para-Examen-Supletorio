@@ -190,8 +190,6 @@ public static int cuadrado(int numero){
 }
 ```
 
-
-
 ---
 
 # Vectores y Matrices
