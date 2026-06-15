@@ -312,13 +312,9 @@ for(int i = 1; i <= 10; i++){
 
 Resultado:
 5 x 1 = 5
-
 5 x 2 = 10
-
 5 x 3 = 15
-
 ...
-
 5 x 10 = 50
 ---
 
@@ -480,9 +476,7 @@ public class MetodoRetorno {
 
 Resultado:
 El cuadrado de 4 es: 16
-
 El cuadrado de 7 es: 49
-
 El cuadrado de 10 es: 100
 [Ver archivo completo — MetodoRetorno.java](./codigo/metodos/MetodoRetorno.java)
 
@@ -663,15 +657,10 @@ public class RecorrerVector {
 
 Resultado:
 Posición 0: 15
-
 Posición 1: 30
-
 Posición 2: 45
-
 Posición 3: 60
-
 Posición 4: 75
-
 Suma total: 225
 [Ver archivo completo — RecorrerVector.java](./codigo/vectores_matrices/RecorrerVector.java)
 
@@ -681,13 +670,9 @@ Suma total: 225
 
 Si un vector es como una fila de casillas, una **matriz** es como una tabla con filas y columnas. Se accede a cada elemento con dos índices: `[fila][columna]`.
 Matriz 3x3:
-
 col 0  col 1  col 2
-
 fila 0:    1      2      3
-
 fila 1:    4      5      6
-
 fila 2:    7      8      9
 Para acceder al número `5` usamos `matriz[1][2]` (fila 1, columna 2... espera, eso sería 6). El `5` está en `matriz[1][1]` (fila 1, columna 1).
 
@@ -735,11 +720,8 @@ Elemento [1][1]: 5
 
 Elemento [2][2]: 9
 Matriz completa:
-
 1 2 3
-
 4 5 6
-
 7 8 9
 Suma diagonal principal: 15
 [Ver archivo completo — MatrizBasica.java](./codigo/vectores_matrices/MatrizBasica.java)
@@ -961,20 +943,14 @@ public class RecorrerLista {
 
 Resultado:
 Recorrido con for-each:
-
 Rojo
 Verde
 Azul
 Amarillo
-
 Recorrido con for tradicional:
-
 Posición 0: Rojo
-
 Posición 1: Verde
-
 Posición 2: Azul
-
 Posición 3: Amarillo
 [Ver archivo completo — RecorrerLista.java](./codigo/listas/RecorrerLista.java)
 
@@ -1099,9 +1075,7 @@ public class EscribirArchivo {
 
 Después de ejecutar este programa, se crea un archivo llamado `datos.txt` con este contenido:
 Nombre: Pablo
-
 Carrera: Tecnologías de la Información
-
 Universidad: UTA
 [Ver archivo completo — EscribirArchivo.java](./codigo/archivos/EscribirArchivo.java)
 
@@ -1144,9 +1118,7 @@ public class LeerArchivo {
 Resultado (si el archivo tiene el contenido del ejemplo anterior):
 Contenido del archivo:
 Nombre: Pablo
-
 Carrera: Tecnologías de la Información
-
 Universidad: UTA
 Lectura completada.
 [Ver archivo completo — LeerArchivo.java](./codigo/archivos/LeerArchivo.java)
